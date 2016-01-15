@@ -93,7 +93,7 @@ public class MainPowerDotsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_display_message);
+        setContentView(R.layout.main_power_dots_layout);
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
@@ -110,7 +110,7 @@ public class MainPowerDotsActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(FullscreenActivity.EXTRA_MESSAGE);
-        Log.d("DisplayMessageActivityTag", message);
+        Log.d("DisplayMessageTag", message);
 
         // Upon interacting with UI controls, delay any scheduled hide()
         // operations to prevent the jarring behavior of controls going away
